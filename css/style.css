@@ -702,3 +702,8 @@ label {
   height: 20rem;
   width: 20rem;
 }
+
+#seqrite-img {
+  width: 16rem;
+  padding-bottom: 2rem;
+}
