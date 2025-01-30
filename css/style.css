@@ -786,3 +786,52 @@ label {
       transform: scale(1);
   }
 }
+
+
+
+
+
+
+
+
+
+
+/* Ensure pop-up is centered and responsive */
+.popup-content {
+  background: white;
+  width: 60%;
+  max-width: 500px; /* Prevents it from being too wide */
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .popup-content {
+      width: 90%; /* Uses more screen space on small screens */
+      max-width: 100%;
+      padding: 15px;
+  }
+
+  .popup-body {
+      flex-direction: column; /* Stacks image and details vertically */
+      align-items: center;
+      text-align: center;
+  }
+
+  .popup-image {
+      width: 80%; /* Makes image smaller for mobile */
+  }
+
+  .popup-details {
+      font-size: 14px; /* Slightly smaller text */
+  }
+
+  .close-btn {
+      font-size: 20px; /* Smaller close button */
+      top: 5px;
+      right: 10px;
+  }
+}
