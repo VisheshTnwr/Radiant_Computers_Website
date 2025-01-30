@@ -44,3 +44,51 @@ function main() {
 
 }
 main();
+
+
+
+
+
+
+
+
+                                                    // POP-UP
+
+
+                                                    function openPopup(imgElement, ...configDetails) {
+                                                      let popupImage = document.getElementById("popup-img");
+                                                      let popupDetails = document.getElementById("popup-details");
+                                                      let popup = document.getElementById("popup");
+                                                  
+                                                      // Set the clicked image in the pop-up
+                                                      popupImage.src = imgElement.src;
+                                                  
+                                                      // Clear previous configurations
+                                                      popupDetails.innerHTML = "";
+                                                  
+                                                      // Add new configurations dynamically
+                                                      configDetails.forEach(detail => {
+                                                          let listItem = document.createElement("li");
+                                                          listItem.textContent = detail;
+                                                          popupDetails.appendChild(listItem);
+                                                      });
+                                                  
+                                                      // Show the pop-up
+                                                      popup.style.display = "flex";
+                                                  }
+                                                  
+                                                  // Close pop-up when clicking the close button
+                                                  function closePopup() {
+                                                      document.getElementById("popup").style.display = "none";
+                                                  }
+                                                  
+                                                  // Close pop-up when clicking outside the pop-up content
+                                                  document.getElementById("popup").addEventListener("click", function (event) {
+                                                      let popupContent = document.querySelector(".popup-content");
+                                                  
+                                                      // Check if the click is outside the content
+                                                      if (!popupContent.contains(event.target)) {
+                                                          closePopup();
+                                                      }
+                                                  });
+                                                  

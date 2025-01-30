@@ -171,7 +171,7 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <img class="products-img" src="img/Products/HP Workstation2 G9.png" alt="">
+        <img onclick="openPopup(this,'High-performance processor', '16GB RAM & 512GB SSD', '4K Ultra HD Display', 'Long-lasting battery')" class="products-img" src="img/Products/HP Workstation2 G9.png" alt="">
         <div class="service-desc">
           <h3>HP Workstation G9</h3>
           <p>
@@ -184,7 +184,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <img id="seqrite-img" class="products-img" src="img/Products/Seqrite_Box-removebg-preview.png" alt="">
+        <img onclick="openPopup(this, 'Protects from viruses & hackers', 'Easy to manage all devices', 'Stops data leaks', 'Blocks unsafe websites & apps', 'Runs fast without slowing PC')" id="seqrite-img" class="products-img" src="img/Products/Seqrite_Box-removebg-preview.png" alt="">
         <div class="service-desc">
           <h3>Seqrite Endpoint Protection</h3>
           <p>
@@ -192,7 +192,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <img class="products-img" src="img/Products/HP Workstation2 G9.png" alt="">
+        <img onclick="openPopup(this,'High-performance processor', '16GB RAM & 512GB SSD', '4K Ultra HD Display', 'Long-lasting battery')" class="products-img" src="img/Products/HP Workstation2 G9.png" alt="">
         <div class="service-desc">
           <h3>AMC (Annual Maintenance Contract)</h3>
           <p>
@@ -252,6 +252,26 @@
 </div>
 
 <!-- / / Products Section / / -->
+<!-- Pop-up Modal -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <div class="popup-body">
+          <img id="popup-img" src="" alt="Product Image" class="popup-image">
+          <ul id="popup-details" class="popup-details"></ul>
+      </div>
+  </div>
+</div>
+
+
+
+
+ 
+
+
+
+
+
 
 
 
