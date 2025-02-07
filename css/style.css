@@ -779,7 +779,7 @@ label {
 @keyframes fadeIn {
   from {
       opacity: 0;
-      transform: scale(0.9);
+      transform: scale(1);
   }
   to {
       opacity: 1;
