@@ -918,11 +918,11 @@
     
           const result = await response.text();
     
-          if (result === "Success") {
+          if (result === "Success!") {
             alert("Form submitted successfully!");
             form.reset();
           } else {
-            alert("There was an issue submitting the form. Please try again.");
+            alert("There was an issue submitting the form, Please try again.");
           }
         } catch (error) {
           console.error("Error:", error);
