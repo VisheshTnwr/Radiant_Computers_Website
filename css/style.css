@@ -718,9 +718,27 @@ label {
   cursor: pointer;
 }
 
+#quickheal-box  {
+  height: 18rem;
+  width: 18rem;
+}
 
+#hp-pro-tower-280-g9 {
+  width: 10rem;
+  height: 17rem;
+  margin-bottom: 3rem;
+}
 
+#microsoft-365 {
+  height: 15rem;
+  width: 25rem;
+  margin-bottom: 5rem;
+}
+#hp-240-g8 {
+  height: 16rem;
 
+  margin-bottom: 4rem;
+}
 
 
 
