@@ -54,7 +54,7 @@ main();
                                                     // POP-UP
 
 
-                                                    function openPopup(imgElement, ...configDetails) {
+                                                    window.openPopup = function(imgElement, ...configDetails) {
                                                       let popupImage = document.getElementById("popup-img");
                                                       let popupDetails = document.getElementById("popup-details");
                                                       let popup = document.getElementById("popup");
@@ -77,7 +77,7 @@ main();
                                                   }
                                                   
                                                   // Close pop-up when clicking the close button
-                                                  function closePopup() {
+                                                  window.closePopup = function() {
                                                       document.getElementById("popup").style.display = "none";
                                                   }
                                                   
