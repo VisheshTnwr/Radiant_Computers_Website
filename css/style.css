@@ -859,5 +859,7 @@ label {
 }
 
 #instagram-icon {
-  height: 5rem;
+  border: solid 2px white;
+  border-radius: 50%;
+  padding: 1.6rem;
 }
